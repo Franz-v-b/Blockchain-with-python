@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<h1>区块链的数据记录</h1>
+<table border="2px" >
+    <tr>
+        <td>index</td>
+        <td>previous_hash</td>
+        <td>proof</td>
+        <td>timestamp</td>
+
+    </tr>
+    {% for d in data %}
+        <tr>
+        <td>{{ d.index }}</td>
+        <td>{{ d.previous_hash }}</td>
+        <td>{{ d.proof }}</td>
+        <td>{{ d.timestamp }}</td>
+
+
+        </tr>
+    {% endfor %}
+</table>
+</h1>
+</html>
